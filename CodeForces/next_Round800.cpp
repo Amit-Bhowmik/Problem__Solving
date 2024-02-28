@@ -9,9 +9,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         cin >> sc[i];
     }
-
-    int p = 0;
-    int t = sc[k - 1];
+    int t = sc[k - 1], p = 0;
 
     for (int i = 0; i < n; ++i) {
         
