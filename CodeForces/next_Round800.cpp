@@ -5,23 +5,22 @@ int main() {
     int n, k;
     cin >> n >> k;
 
-    int totalScore;
-    int count = 0;
-    for (int i = 0; i < n; i++) {
-        int score;
-        cin >> score;
-        if (i < k - 1 && score > 0) {
-            count++;
-        } 
-        else if (i >= k - 1 && score >= totalScore && score > 0) {
-            count++;
-        }
-        if (i == k - 1) {
-            totalScore = score;
+    int sc[n];
+    for (int i = 0; i < n; ++i) {
+        cin >> sc[i];
+    }
+
+    int p = 0;
+    int t = sc[k - 1];
+
+    for (int i = 0; i < n; ++i) {
+        
+        if (sc[i] > 0 && sc[i] >= t) {
+            p++;
         }
     }
 
-    cout << count << endl;
+    cout << p << endl;
 
     return 0;
 }
