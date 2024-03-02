@@ -6,7 +6,7 @@ int main()
     cin >> a;
     cin >> b;
     string sum = "";
-    for (int i = 0; i < a.length(); i++)
+    for (int i = 0; i < a.length(); i++) // X-OR operations
     {
         if (a[i] == b[i])
         {
